@@ -1,0 +1,16 @@
+body {
+  background-color: #212121;
+}
+footer {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.541176);
+}
+
+a {
+  color: #ff4081;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
