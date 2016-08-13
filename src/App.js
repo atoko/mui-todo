@@ -4,12 +4,13 @@ import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import { TodoNav, TodoInput, TodoList } from "./components/todo/";
 import Paper from "material-ui/Paper";
 import IconButton from "material-ui/IconButton";
+
 class App extends Component {
 	componentWillMount() {
 		this.setState({ todos: [] });
 	}
 	onAddTodo(input) {
-		if (input == "") {
+		if (input === "") {
 			return;
 		}
 		var todos = this.state.todos;
@@ -36,9 +37,11 @@ class App extends Component {
         <TodoList onClear={this.onClearTodo.bind(this)} items={this.state.todos}/>
       </Paper>
       <footer>
-        <small>created with <a href="http://www.material-ui.com/">material-ui</a></small>
+        <small>created with <a href="http://www.material-ui.com/" target="_blank">material-ui</a></small>
         <div>
-          <IconButton iconClassName="fa fa-github-alt"/>
+          <a href="http://github.com/atoko/mui-todo" target="_blank">
+            <IconButton iconClassName="fa fa-github-alt"/>
+          </a>
          </div>
       </footer>
     </div>

@@ -1,5 +1,6 @@
 {
   "name": "mui-todo",
+  "homepage": "http://atoko.github.io/mui-todo",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
